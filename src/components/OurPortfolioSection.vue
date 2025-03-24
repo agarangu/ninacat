@@ -61,9 +61,6 @@
       src: './assets/art/amigas.jpg',
     },
     {
-      src: './assets/art/angus.jpg',
-    },
-    {
       src: './assets/art/George_Weasley.jpg',
     },
     {
