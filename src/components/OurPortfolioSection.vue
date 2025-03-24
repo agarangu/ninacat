@@ -7,15 +7,10 @@
     <div class="text-body-1 text-medium-emphasis mt-5">
       Realizado por Nina Cat, supervisado por el CEO.
     </div>
-    <v-container
-      class="d-flex justify-center align-center"
-      max-width="800">
-      <v-responsive
-        :aspect-ratio="16 / 9"
-        class="align-center">
-        <v-carousel 
+    <v-carousel 
         cycle
         hide-delimiters
+        :height="carouselHeight"
         show-arrows="hover">
         <v-carousel-item
           v-for="(item,i) in items"
@@ -23,22 +18,36 @@
           :src="item.src"
         ></v-carousel-item>
       </v-carousel>
-
-      </v-responsive>
-    </v-container>
     
     <v-btn variant="plain">
       Portafolio completo
       <v-tooltip
         activator="parent"
         location="bottom"
+        :open-on-click=true
       >En construcción</v-tooltip>
     </v-btn>
     
   </v-sheet>
 </template>
 <script setup>
+  import { ref, watch } from 'vue'
+  let carouselHeight = ref("700")
+  let orientationChanged = ref(-1)
+  screen.orientation.addEventListener("change", () => {orientationChanged.value*=-1})
+  watch(orientationChanged, () => {
+    if(screen.width > screen.height) carouselHeight.value = "70vw"
+    else carouselHeight.value = "100vw"
+  })
+  
+  
   const items = [
+    {
+      src: './assets/art/castillo.jpg',
+    },
+    {
+      src: './assets/art/21_Marzo.jpg',
+    },
     {
       src: './assets/art/8M_web.jpg',
     },
