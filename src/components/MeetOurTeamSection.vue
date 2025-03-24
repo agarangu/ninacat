@@ -63,7 +63,7 @@
       name: 'Angus Bacon',
       title: 'CEO',
       description:
-        'Su presencia inspiradora y su voz adorable son el motor indispensable del equipo. Su principal area de interés es la alimentación personal.',
+        'Su presencia inspiradora y su voz adorable son el motor indispensable del equipo. Su principal área de interés es la alimentación personal.',
     },
     {
       image: './assets/team/mora_dev.jpg',
@@ -72,20 +72,6 @@
       description:
         'Encargada de realizar tareas que exceden ampliamente su capacidad, sin éxito alguno. Pero valoramos su esfuerzo.',
     },
-    // {
-    //   image: './assets/team/person2.png',
-    //   name: 'CHRISTINA HAWKINS',
-    //   title: 'Head of SEO',
-    //   description:
-    //     'Johnathan is our co-founder and has developed search strategies for a variety of clients for over 5 years.',
-    // },
-    // {
-    //   image: './assets/team/person3.png',
-    //   name: 'CHRISTINA HAWKINS',
-    //   title: 'Head of SEO',
-    //   description:
-    //     'Johnathan is our co-founder and has developed search strategies for a variety of clients for over 5 years.',
-    // },
-    
+
   ]
 </script>
