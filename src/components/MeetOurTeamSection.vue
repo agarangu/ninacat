@@ -52,7 +52,7 @@
 <script setup>
   const team = [
     {
-      image: './assets/team/romi_artist.jpg',
+      image: './assets/team/romi.jpg',
       name: 'Nina Cat',
       title: 'Ilustradora',
       description:
