@@ -12,13 +12,13 @@
     <template v-if="$vuetify.display.mdAndUp" #append>
       <div class="hidden-sm-and-down">
         <v-btn
-          v-for="item in menu"
-          :key="item"
+          v-for="item in menu2"
+          :key="item.id"
           class="text-body-1 blue-grey-darken-4"
-          :href="`#${item.toLowerCase()}`"
+          :href="`#${item.id}`"
           variant="text"
         >
-          {{ item }}
+          {{ item.display }}
         </v-btn>
       </div>
     </template>
@@ -28,13 +28,25 @@
 <script setup>
   import logo from "/src/assets/logo.png"
   import firma from "/src/assets/firma.png"
+  import { useI18n } from "vue-i18n";
+  const { t } = useI18n({ useScope: "global" });
   const menu = [
     // 'Home',
     // 'About',
     // 'Testimonials',
-    'Trabajo',
-    'Equipo',
+    'portfolio',
+    'team',
   //   'Features',
   //   'Pricing',
+  ];
+  const menu2 = [
+    {
+      id: 'portfolio',
+      display: t('header.portfolio')
+    },
+    {
+      id: 'team',
+      display: t('header.team')
+    },
   ]
 </script>

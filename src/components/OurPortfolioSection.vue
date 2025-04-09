@@ -1,11 +1,11 @@
 <template>
-  <v-sheet id="trabajo" class="text-center py-16">
+  <v-sheet id="portfolio" class="text-center py-16">
     <div class="text-h4 font-weight-bold">
-      Nuestro trabajo
+      {{ $t('portfolio.title') }}
     </div>
 
     <div class="text-body-1 text-medium-emphasis mt-5">
-      Realizado por Nina Cat, supervisado por el CEO.
+      {{ $t('portfolio.subtitle') }}
     </div>
     <v-carousel 
         cycle
@@ -20,12 +20,12 @@
       </v-carousel>
     
     <v-btn variant="plain">
-      Portafolio completo
+      {{ $t('portfolio.button') }}
       <v-tooltip
         activator="parent"
         location="bottom"
         :open-on-click=true
-      >En construcción</v-tooltip>
+      >{{ $t('portfolio.tooltip') }}</v-tooltip>
     </v-btn>
     
   </v-sheet>

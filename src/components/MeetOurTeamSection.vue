@@ -1,12 +1,12 @@
 <template>
   <v-sheet
-    id="equipo"
+    id="team"
     class="text-center py-16"
     color="secondary"
     min-height="800"
   >
     <div class="text-h4 font-weight-bold">
-      Conoce a nuestro Equipo
+      {{ $t('team.title') }}
     </div>
 
     <!-- <div class="text-body-1 text-medium-emphasis mt-5">
@@ -50,27 +50,26 @@
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n";
+const { t } = useI18n({ useScope: "global" });
   const team = [
     {
       image: './assets/team/romi.jpg',
       name: 'Nina Cat',
-      title: 'Ilustradora',
-      description:
-        'Esclava.',
+      title: t('team.nina.position'),
+      description: t('team.nina.description'),
     },
     {
       image: './assets/team/angus_ceo.jpg',
       name: 'Angus Bacon',
-      title: 'CEO',
-      description:
-        'Su presencia inspiradora y su voz adorable son el motor indispensable del equipo. Su principal área de interés es la alimentación personal.',
+      title: t('team.angus.position'),
+      description: t('team.angus.description'),
     },
     {
       image: './assets/team/mora_dev.jpg',
       name: 'Mora Margarita',
-      title: 'Desarrolladora Jr.',
-      description:
-        'Encargada de realizar tareas que exceden ampliamente su capacidad, sin éxito alguno. Pero valoramos su esfuerzo.',
+      title: t('team.mora.position'),
+      description: t('team.mora.description'),
     },
 
   ]
