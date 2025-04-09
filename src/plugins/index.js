@@ -9,10 +9,10 @@ import vuetify from './vuetify'
 import { createI18n } from 'vue-i18n'
 
 const i18n = createI18n({
-  locale: 'en',
-  fallbackLocale: 'spa',
+  locale: navigator.language.split('-')[0],
+  fallbackLocale: 'es',
   messages: {
-    spa: {
+    es: {
       header: {
         portfolio: 'Trabajo',
         team: 'Equipo'
