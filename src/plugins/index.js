@@ -63,7 +63,7 @@ const i18n = createI18n({
         },
         angus: {
           position: 'CEO',
-          description: 'His inspiring presence and adorable voice are the motor the keeps the team moving. His main area of interest is nutrition (mostly his own).'
+          description: 'His inspiring presence and adorable voice are the motor that keeps the team moving. His main area of interest is nutrition (mostly his own).'
         },
         mora: {
           position: 'Jr. Developer',
