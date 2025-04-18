@@ -16,7 +16,7 @@
     <v-divider class="my-2" thickness="2" width="50"></v-divider>
 
     <div class="text-caption">
-      {{ new Date().getFullYear() }} — {{ $t('footer.developed') }} <a class="text-decoration-none" href="https://www.linkedin.com/in/angel-aranguiz-gonzalez/" style="color: darkslateblue"><strong>Angel Aranguiz G.</strong></a>
+      {{ new Date().getFullYear() }} — {{ $t('footer.developed') }} <a class="text-decoration-none" href="https://www.linkedin.com/in/angel-aranguiz-gonzalez/" target="_blank" style="color: darkslateblue"><strong>Angel Aranguiz G.</strong></a>
     </div>
   </v-footer>
 </template>
