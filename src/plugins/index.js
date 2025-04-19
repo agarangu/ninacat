@@ -58,7 +58,7 @@ const i18n = createI18n({
         title: 'Meet our Team',
         subtitle: '',
         nina: {
-          position: 'Illutrator',
+          position: 'Illustrator',
           description: 'Slave.'
         },
         angus: {
